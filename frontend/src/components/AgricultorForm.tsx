@@ -84,9 +84,15 @@ export default function AgricultorForm({ initialData = {}, onSubmit }: Props) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
-    const dataToSubmit = Object.fromEntries(
+
+    let dataToSubmit: Partial<Agricultor> = Object.fromEntries(
       Object.entries(form).filter(([, v]) => v.trim() !== "")
     );
+    if (isEditing) {
+      const dataForUpdate = { ...dataToSubmit };
+      delete dataForUpdate.documento;
+      dataToSubmit = dataForUpdate;
+    }
     onSubmit(dataToSubmit);
   };
 

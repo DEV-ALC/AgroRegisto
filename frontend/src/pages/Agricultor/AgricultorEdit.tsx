@@ -36,8 +36,13 @@ export default function AgricultorEdit() {
     try {
       await updateAgricultor(id!, formData);
       navigate("/agricultores");
-    } catch {
-      alert("Erro ao atualizar agricultor");
+    } catch (error: unknown) {
+      // CORREÇÃO: Capturar o erro e usar a mensagem
+      let errorMessage = "Erro ao atualizar agricultor.";
+      if (error instanceof Error) {
+        errorMessage = error.message;
+      }
+      alert(errorMessage); // Exibir a mensagem específica do servidor
     }
   };
 
