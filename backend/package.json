@@ -7,6 +7,7 @@
     "dev": "tsx watch src/main.ts",
     "build": "tsc",
     "typeorm": "tsx ./node_modules/typeorm/cli.js -d src/core/database/data-source.ts",
+    "migration:run": "tsx ./node_modules/typeorm/cli.js -d src/core/database/data-source.ts migration:run",
     "migration:create": "tsx ./node_modules/typeorm/cli.js migration:create",
     "migration:revert": "tsx ./node_modules/typeorm/cli.js -d src/core/database/data-source.ts migration:revert"
   },
