@@ -83,6 +83,8 @@ routes.get("/agricultores/:id", agricultorController.getById.bind(agricultorCont
  *         description: Agricultor criado
  *       400:
  *         description: Requisição inválida
+ *       409:
+ *         description: Duplicidade de Cadastro
  */
 routes.post(
     "/agricultores",

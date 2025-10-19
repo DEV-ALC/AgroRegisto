@@ -30,7 +30,7 @@ export interface IAgricultorRepository {
 }
 
 /**
-* Comunicacao com o banco de dados
+* Comunicação com o banco para as operações de CRUD
 */
 export class AgricultorRepository implements IAgricultorRepository {
     private ormRepository: Repository<AgricultorEntity>;

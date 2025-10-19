@@ -22,10 +22,14 @@ export class AgricultorController {
      */
     public async create(req: Request, res: Response): Promise<Response> {
         try {
-            // Delega a tarefa para a equipe que já existe.
             const agricultor = await this.agricultorService.create(req.body);
             return res.status(201).json(agricultor);
         } catch (error: any) {
+            if (error.message && error.message.includes('Documento já cadastrado')) {
+                return res.status(409).json({
+                    error: error.message
+                });
+            }
             return res.status(400).json({ error: error.message });
         }
     }

@@ -23,7 +23,9 @@ export class AgricultorService {
 
         if (agricultorExistente) {
             if (agricultorExistente.deleted_at === null) {
-                throw new Error('Já existe um agricultor cadastrado com este CPF/CNPJ.');
+                const error = new Error('Documento já cadastrado e ativo.');
+                (error as any).status = 409;
+                throw error;
             }
 
             const dadosParaAtualizar = {
