@@ -4,8 +4,8 @@ Este é um sistema completo de CRUD (Criar, Ler, Atualizar, Deletar) para o gere
 
 O projeto é dividido em duas partes principais:
 
-* **`backend`**: Uma API RESTful desenvolvida em Node.js com TypeScript, Express e TypeORM.
-* **`frontend`**: Uma interface de usuário reativa desenvolvida em React.
+- **`backend`**: Uma API RESTful desenvolvida em Node.js com TypeScript, Express e TypeORM.
+- **`frontend`**: Uma interface de usuário reativa desenvolvida em React.
 
 ## Estrutura de Pastas
 
@@ -19,20 +19,21 @@ AgroRegistro/
 
 ## Tecnologias
 
-| Área      | Tecnologias Utilizadas                                |
-| :-------- | :---------------------------------------------------- |
-| **Backend** | Node.js, TypeScript, Express.js, MySQL, TypeORM       |
-| **Frontend**| React, Vite, Axios (para chamadas de API), CSS Modules|
+| Área         | Tecnologias Utilizadas                                 |
+| :----------- | :----------------------------------------------------- |
+| **Backend**  | Node.js, TypeScript, Express.js, MySQL, TypeORM        |
+| **Frontend** | React, Vite, fetch (para chamadas de API), CSS Modules |
 
 ## Como Rodar o Projeto Completo
 
 Para executar a aplicação, você precisará iniciar o backend e o frontend em terminais separados.
 
 ### Pré-requisitos
-* Node.js (v18 ou superior)
-* NPM
-* MySQL (v8 ou superior)
-* Git
+
+- Node.js (v18 ou superior)
+- NPM
+- MySQL (v8 ou superior)
+- Git
 
 ### 1. Iniciar o Backend (API)
 
