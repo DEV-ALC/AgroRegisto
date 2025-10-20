@@ -40,19 +40,22 @@ Para executar a aplicação, você precisará iniciar o backend e o frontend em 
 Primeiro, vamos configurar e iniciar o servidor da API.
 
 ```bash
-# 1. Navegue para a pasta do backend
+#1. Clone o repositorio
+git clone https://github.com/DEV-ALC/AgroRegisto.git
+
+# 2. Navegue para a pasta do backend
 cd backend
 
-# 2. Instale as dependências
+# 3. Instale as dependências
 npm install
 
-# 3. Configure o arquivo .env (veja o README.md do backend para detalhes)
+# 4. Configure o arquivo .env (veja o README.md do backend para detalhes)
 #    - Crie o arquivo .env e adicione as credenciais do seu banco de dados.
 
-# 4. Rode as migrations para criar as tabelas no banco
+# 5. Rode as migrations para criar as tabelas no banco
 npm run migration:run
 
-# 5. Inicie o servidor em modo de desenvolvimento
+# 6. Inicie o servidor em modo de desenvolvimento
 npm run dev
 ```
 
