@@ -11,16 +11,18 @@ Este projeto é a interface de utilizador (UI) para Gestão de Agricultores, des
 
 ## Tecnologias Usadas
 
-| Tecnologia       | Versão | Descrição                                                            |
-| :--------------- | :----- | :------------------------------------------------------------------- |
-| **React**        | 19.1.1 | Biblioteca principal para a interface do utilizador.                 |
-| **TypeScript**   | ~5.9.3 | Garante a segurança e a tipagem estática do código.                  |
-| **Vite**         | 7.1.7  | Ferramenta de _build_ e servidor de desenvolvimento rápido.          |
-| **Tailwind CSS** | 3.4.1  | Framework de CSS _utility-first_ para estilos rápidos e responsivos. |
+| Tecnologia       | Versão | Descrição                                                   |
+| :--------------- | :----- | :---------------------------------------------------------- |
+| **React**        | 19.1.1 | Biblioteca principal para a interface do utilizador.        |
+| **TypeScript**   | ~5.9.3 | Garante a segurança e a tipagem estática do código.         |
+| **Vite**         | 7.1.7  | Ferramenta de _build_ e servidor de desenvolvimento rápido. |
+| **Tailwind CSS** | 3.4.1  | Framework de CSS para estilos rápidos e responsivos.        |
 
 ---
 
-## Estrutura
+### Pré-requisitos
+
+Node.js (v18+).
 
 ## Configuração Inicial
 
@@ -30,10 +32,6 @@ Crie um arquivo .env na raiz da pasta frontend e adicione o caminho da API.
 #API
 VITE_API_BASE_URL="http://localhost:3000"
 ```
-
-### Pré-requisitos
-
-Node.js (v18+).
 
 ### Clonar e Instalar
 
@@ -48,8 +46,12 @@ npm install
 ### Rodar o Projeto
 
 ```bash
+#configure o .env com o camiho da api
+#caso não configure o default é localhost:3000
 npm run dev
 ```
 
 O Projeto estará disponível em:
 👉 [http://localhost:5173/](http://localhost:5173/)
+
+---

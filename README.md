@@ -22,11 +22,7 @@ AgroRegistro/
 | Área         | Tecnologias Utilizadas                                 |
 | :----------- | :----------------------------------------------------- |
 | **Backend**  | Node.js, TypeScript, Express.js, MySQL, TypeORM        |
-| **Frontend** | React, Vite, fetch (para chamadas de API), CSS Modules |
-
-## Como Rodar o Projeto Completo
-
-Para executar a aplicação, você precisará iniciar o backend e o frontend em terminais separados.
+| **Frontend** | React, Vite, fetch (para chamadas de API), tailwindcss |
 
 ### Pré-requisitos
 
@@ -34,6 +30,10 @@ Para executar a aplicação, você precisará iniciar o backend e o frontend em 
 - NPM
 - MySQL (v8 ou superior)
 - Git
+
+## Como Rodar o Projeto Completo
+
+Para executar a aplicação, você precisará iniciar o backend e o frontend em terminais separados.
 
 ### 1. Iniciar o Backend (API)
 
@@ -57,6 +57,7 @@ npm run dev
 ```
 
 > O servidor da API estará rodando em `http://localhost:3000`.
+> A documentação da API em `http://localhost:3000/docs`.
 
 ### 2. Iniciar o Frontend (Interface)
 
@@ -69,9 +70,15 @@ cd frontend
 # 2. Instale as dependências
 npm install
 
-# 3. Inicie o servidor de desenvolvimento do React
+# 3. Configure o arquivo .env (veja o README.md do frontend para detalhes)
+#    -> Variavel de ambiente do local da api
+#    caminho default localhost:3000
+
+# 4. Inicie o servidor de desenvolvimento do React
 npm run dev
 
 ```
 
 > A aplicação estará acessível no seu navegador, geralmente em `http://localhost:5173`. A interface fará as chamadas para a API que está rodando na porta 3000.
+
+---
