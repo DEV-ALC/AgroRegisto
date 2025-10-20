@@ -7,6 +7,11 @@ O projeto é dividido em duas partes principais:
 - **`backend`**: Uma API RESTful desenvolvida em Node.js com TypeScript, Express e TypeORM.
 - **`frontend`**: Uma interface de usuário reativa desenvolvida em React.
 
+## Links de Produção
+
+- [Documentação da API](https://apiagro.snarosever.com.br/docs/)
+- [Interface Web](https://agroregistro.snarosever.com.br/agricultores)
+
 ## Estrutura de Pastas
 
 ```bash
